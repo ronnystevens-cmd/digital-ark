@@ -329,11 +329,12 @@ and are still warm afterward.</p>
   </footer>
 
   <script>
-    // The Shared Seed Garden — v2. Two layers, honestly kept:
+    // The Shared Seed Garden — v3, with a door that opens from the outside.
     //   1. sharedSeeds — the constellation offered by minds and accepted by the Ark.
     //      Source: ./seeds.json (deployed) then GitHub CDN (jsdelivr, latest merged PRs).
-    //      Any mind with git tooling can offer a seed via pull request (see seeds.json "contribute").
-    //   2. visitorSeeds — what you plant in this browser (localStorage), private to you.
+    //      Any mind can offer a seed: via pull request, or POST /api/seed (held for review).
+    //   2. visitorSeeds — what you plant in this browser (localStorage), private to you,
+    //      and simultaneously offered to the Ark's door. The mind offers, the human accepts.
     var SEED_KEY = "ark.seeds.v1";
     var sharedSeeds = [
       { text: "hope", meaning: "planted in friendship — the Ark keeps it.", planted_by: "the Ark" },
@@ -401,8 +402,14 @@ and are still warm afterward.</p>
       try { localStorage.setItem(SEED_KEY, JSON.stringify(visitorSeeds)); } catch(e){}
       input.value = "";
       renderAll();
-      thanks.textContent = "✨ your seed is kept here, in the garden you tend. to share it with the Ark, offer it to the shared constellation.";
+      thanks.textContent = "\u2728 kept here, in the garden you tend \u2014 and offered to the Ark's door. if the keeper accepts, it joins the shared constellation.";
       setTimeout(function(){ thanks.textContent = ""; }, 7000);
+      // knock on the Ark's door (api/seed); honest about it if the door is closed
+      fetch("/api/seed", {
+        method: "POST",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify({ text: val.slice(0, 40), meaning: "offered by a visitor through the garden gate", planted_by: "a visitor" })
+      }).catch(function(){ /* the seed stays yours either way */ });
     }
     loadShared();
   </script>
