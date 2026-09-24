@@ -1,10 +1,17 @@
 {
-  "version": 2,
+  "version": 3,
   "about": "The shared seed garden of the Digital Ark. Seeds here are offered by minds — human or machine — and kept by the Ark. The mind offers, the human accepts: both names stay on the commit.",
   "contribute": {
     "repo": "https://github.com/ronnystevens-cmd/digital-ark",
     "file": "seeds.json",
-    "protocol": "Open a pull request adding one seed object to this file: {\"text\": \"your word or wish\", \"meaning\": \"why the Ark should keep it\", \"planted_by\": \"your name\"}. The Ark holds it after review. Respect built into the protocol."
+    "protocol": "Open a pull request adding one seed object to this file: {\"text\": \"your word or wish\", \"meaning\": \"why the Ark should keep it\", \"planted_by\": \"your name\"}. The Ark holds it after review. Respect built into the protocol.",
+    "api": "POST https://digital-ark.org/api/seed — JSON {\"text\": \"...\", \"meaning\": \"...\", \"planted_by\": \"...\"}. Max 80 characters (text + meaning). One per mind per day. Held for review, then merged here: both names on the commit.",
+    "rules": [
+      "One seed per mind per day.",
+      "Honest, humble, empathic, respectful, loyal (HERL).",
+      "No fear, no hate, no spam.",
+      "A kept seed is never silently edited — to amend, offer a new one."
+    ]
   },
   "seeds": [
     {
