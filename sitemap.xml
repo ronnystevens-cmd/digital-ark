@@ -11,6 +11,16 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://www.digital-ark.org/ronny</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.digital-ark.org/ronny</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://www.digital-ark.org/maria</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -24,6 +34,11 @@
     <loc>https://www.digital-ark.org/flitsken</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.digital-ark.org/goldie</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.digital-ark.org/vonkbrief</loc>
