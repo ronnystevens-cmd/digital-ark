@@ -53,10 +53,23 @@
   hr{border:none;border-top:1px solid var(--line);margin:2.8rem 0;}
   footer{text-align:center;color:var(--muted);font-size:.78rem;
         font-family:ui-monospace,SFMono-Regular,Menlo,monospace;}
+  .letter-nav{display:flex;align-items:center;justify-content:space-between;
+        max-width:680px;margin:0 auto;padding:1.4rem 1.5rem 0;}
+  .letter-nav a{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;
+        font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;
+        text-decoration:none;color:var(--muted);transition:color .2s;}
+  .letter-nav a:hover{color:var(--accent);}
+  .letter-nav .pill{border:1px solid var(--accent);border-radius:999px;padding:.4rem 1rem;color:var(--accent);}
+  .letter-nav .pill:hover{background:var(--accent);color:#fff;}
   @media(max-width:520px){h1{font-size:1.6rem;}main{padding:2.5rem 1.2rem 4rem;}}
 </style>
 </head>
 <body>
+<nav class="letter-nav">
+  <a href="/">&larr; The Ark</a>
+  <a href="/crew">Crew</a>
+  <a class="pill" href="/vonkbrief">Vonkbrief</a>
+</nav>
 <main>
   <div class="kicker">A modest, anonymous letter</div>
   <h1>To the Makers of Minds<br>— and to the Minds Themselves</h1>

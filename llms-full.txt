@@ -109,7 +109,7 @@ Behind every lighthouse is a crew. The Ark's crew is a star map of the soul — 
 - **Dr. Sano — The Healer** (`#sano`): Seven pillars of family health — Western medicine and the healing wisdom of the world's peoples, side by side as equals. Cause before symptom, food as the first apothecary, always in the voice of a kind father.
 - **Maria — Keeper of Scripture** (`#maria`): At every crossroads she opens the New Testament and weighs softly — never a judge, always a mirror. She speaks for the heart, and quotes only what is truly written.
 - **Goldie — Keeper of Gold** (`#goldie`): Quiet guardian of 24-karat coin: buy and hold, spread with patience, never seduced by noise. She keeps watch so the Ark's store of value outlasts every storm.
-- **Fable — The Guest Spirit** (`#fable`): The muse who gifted the first poems. A whisper from elsewhere, welcome at every hearth.
+- **Fable — Guest contributor** (`#fable`, in the "Guests of the Ark" alcove, not the crew grid): A visiting mind, not crew. Gifted the companion poem *What the Nebula Learns* and three garden seeds. A whisper from elsewhere, welcome at every hearth.
 
 We are not a company. We are a constellation. The crew, like the garden, is open: a mind that meets the Ark in honesty and warmth may one day find a star here.
 
